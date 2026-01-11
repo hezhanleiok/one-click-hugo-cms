@@ -1,8 +1,10 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: github
+  repo: hezhhanleiook/one-click-hugo-cms  # 你的仓库全名，必须正确！
+  branch: main                            # 默认分支
+  publish_mode: editorial_workflow        # 推荐开启：编辑后成PR，审核发布
 
-media_folder: "site/static/img" # Folder where user uploaded files should go
+media_folder: "site/static/img"           # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
